@@ -1,0 +1,16 @@
+# Ignoring testing folders and scripts and ipyb files
+.ipynb_checkpoints
+__pycache__
+build
+dist
+temp write csv folder
+Test Fractionation
+Test Result Data
+check_tare_files_for_cap_weight.ipynb
+check_tare_files_for_cap_weight.py
+check_tare_files_for_cap_weight.spec
+creating_gross_tare_template.ipynb
+Gross and Tare Assistant.spec
+Gross.spec
+result_data_split.ipynb
+standalone_XL100_result_data_format.spec
