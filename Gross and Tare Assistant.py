@@ -103,6 +103,13 @@ def create_csv(filename, filepath, tube_20, tube_24, tare_set, gross_set):
                     
                     spamwriter.writerow([str(TareRack), TarePos, str(TgtRack), TgtPos])
 
+def easter():
+    res = messagebox.askquestion('You found me :)', 'Do you know what one Biomicrolab said to the other?')
+    if res == 'yes':
+        messagebox.showinfo("You found me :)", "Okay :) Don't tell anyone")
+    elif res == 'no':
+        messagebox.showinfo('You found me :)', "\"Hey don't let that tube's comment weigh on you, he was acting unnecessarily crude.\"")
+    
 """Checks if the file already exists"""
 def file_exists(tare_set, gross_set, tube_20, tube_24):
     # Making the filename
@@ -163,9 +170,11 @@ if __name__ == '__main__':
 
     # Labeling the app
     frame_app = tk.Frame(master=window, borderwidth=10)
-    label_app = tk.Label(master=frame_app, text="WELCOME! What would you like to weigh today?")
+    easter_button = tk.Button(master=frame_app, text="WELCOME!", relief=tk.FLAT, command=easter)
+    label_app = tk.Label(master=frame_app, text="What would you like to weigh today?")
 #     label2_app = tk.Label(master=frame_app, text="What would you like to weigh today?")
-    label_app.pack()
+    easter_button.pack(side=tk.LEFT)
+    label_app.pack(side=tk.LEFT)
 #     label2_app.pack()
     frame_app.pack()
 
