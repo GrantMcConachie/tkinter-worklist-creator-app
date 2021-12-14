@@ -121,7 +121,7 @@ def file_exists(tare_set, gross_set, tube_20, tube_24):
         filename = "gross_tare_" + gross_set + "_" + tare_set + "_24.csv"
         
     # Checking if the file is in the folder
-    filepath = "C:\\Fractionation"
+    filepath = "path\\to\\file\\directory"
     for file in os.listdir(filepath):
         if file == filename:
             return True, filename, filepath
