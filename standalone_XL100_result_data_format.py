@@ -2,7 +2,7 @@ from pathlib import Path
 from datetime import datetime
 import csv
 
-result_data_dir = "C:\\Program Files\\HighRes Biosolutions\\BioMicroLab XL Files\\Result Data\\"
+result_data_dir = "path\\to\\data\\"
 one_day = 95378.95542693138  # seconds
 one_day_ago = datetime.now().timestamp() - one_day  # seconds
 
